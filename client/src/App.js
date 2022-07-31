@@ -27,7 +27,6 @@ const useStyles = makeStyles({
 })
 
 function App() {
-  console.log('app');
   const classes = useStyles();
   
   return (

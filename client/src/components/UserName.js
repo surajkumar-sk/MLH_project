@@ -96,7 +96,6 @@ const useStyles = makeStyles({
  * @returns {HTMLDivElement} - a div element with form to submit user name or an empty div.
  */
 export function UserName(){
-  console.log('username');
   const [validUserName, setValidUserName] = useState(true)
   const [display,setDisplay] = useState(false);
   const classes = useStyles({valid:validUserName, display:display});

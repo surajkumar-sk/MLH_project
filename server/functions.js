@@ -7,7 +7,6 @@ exports.getPosts = function (req,res){
   let data=[];
   let dbLength = db.length;
   // setting lastEvaluated ID value for continuing pagination
-  console.log(req)
   if(!req.query.LastEvalValue){
     res.status(400).send("invalid query");
   }

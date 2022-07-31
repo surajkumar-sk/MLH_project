@@ -80,7 +80,6 @@ const useStyles =makeStyles({
  * @returns {HTMLDivElement}- a complete post Item div element 
  */
 export function Post(props){
-  console.log('post');
   let url='';
   let videoType = props.data.video.indexOf('youtube') !== -1 ? 'youtube' : 'twitch';
   if(videoType === 'youtube'){

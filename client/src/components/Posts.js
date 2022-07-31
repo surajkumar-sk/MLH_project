@@ -32,7 +32,6 @@ const useStyles =makeStyles({
  * @returns {HTMLDivElement} - a list  of posts.
  */
 export function Posts(){
-  console.log('posts');
   const UserName = window.localStorage.getItem('username')
   const [data,setData] = useState([]);
   const [ParamData, setParamData] = useState({});

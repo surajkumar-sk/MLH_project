@@ -69,7 +69,6 @@ const useStyles = makeStyles({
  * @returns {HTMLDivElement} - a simple welcome message div
  */
 export function WelcomeMsg(){
-  console.log('WelcomeMsg');
   const UserName = window.localStorage.getItem('username');
   const classes = useStyles();
 
