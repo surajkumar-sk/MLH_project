@@ -168,7 +168,7 @@ exports.deleteCommentOnPost = function(req,res){
   let isNumber = ((String(parseInt(req.params.id))).length == req.params.id.length);
   let isValidUser = req.body.username && !req.body.username.includes(' ')
   if(req.params.id <= db.length && isNumber && isValidUser){
-    // adds Comments to db file
+    // removes Comments to db file
     db[req.params.id - 1].comments = db[req.params.id - 1].comments.filter((comment)=>{
       if(req.body.commentId == comment.commentId){
         return false;
